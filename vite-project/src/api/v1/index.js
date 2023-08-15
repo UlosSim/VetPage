@@ -3,7 +3,6 @@ import axios from 'axios';
 const baseURL = 'https://glittery-dull-snickerdoodle.glitch.me/';
 
 export const fetchPets = () => axios.get(`${baseURL}v1/pets`);
-
 export const createPet = (body) => axios.post(`${baseURL}v1/pets`, body);
 
 export const deletePet = (id) => axios.delete(`${baseURL}v1/pets/${id}`);
